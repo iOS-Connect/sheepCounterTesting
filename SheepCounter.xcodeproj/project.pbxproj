@@ -12,7 +12,28 @@
 		526FE96D1C210DDA007651BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526FE96B1C210DDA007651BC /* Main.storyboard */; };
 		526FE96F1C210DDA007651BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526FE96E1C210DDA007651BC /* Assets.xcassets */; };
 		526FE9721C210DDA007651BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526FE9701C210DDA007651BC /* LaunchScreen.storyboard */; };
+		526FE9801C210EED007651BC /* SheepCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526FE97F1C210EED007651BC /* SheepCounterUITests.swift */; };
+		526FE9881C21101D007651BC /* SheepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526FE9871C21101D007651BC /* SheepModel.swift */; };
+		526FE9901C2110C4007651BC /* SheepCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526FE98F1C2110C4007651BC /* SheepCounterTests.swift */; };
+		526FE9981C21167F007651BC /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526FE9971C21167F007651BC /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		526FE9821C210EED007651BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526FE95C1C210DDA007651BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 526FE9631C210DDA007651BC;
+			remoteInfo = SheepCounter;
+		};
+		526FE9921C2110C4007651BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526FE95C1C210DDA007651BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 526FE9631C210DDA007651BC;
+			remoteInfo = SheepCounter;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		526FE9641C210DDA007651BC /* SheepCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheepCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +43,32 @@
 		526FE96E1C210DDA007651BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		526FE9711C210DDA007651BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		526FE9731C210DDA007651BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526FE97D1C210EED007651BC /* SheepCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheepCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		526FE97F1C210EED007651BC /* SheepCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheepCounterUITests.swift; sourceTree = "<group>"; };
+		526FE9811C210EED007651BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526FE9871C21101D007651BC /* SheepModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheepModel.swift; sourceTree = "<group>"; };
+		526FE98D1C2110C4007651BC /* SheepCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheepCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		526FE98F1C2110C4007651BC /* SheepCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheepCounterTests.swift; sourceTree = "<group>"; };
+		526FE9911C2110C4007651BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526FE9971C21167F007651BC /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		526FE9611C210DDA007651BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526FE97A1C210EED007651BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526FE98A1C2110C4007651BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				526FE9661C210DDA007651BC /* SheepCounter */,
+				526FE97E1C210EED007651BC /* SheepCounterUITests */,
+				526FE98E1C2110C4007651BC /* SheepCounterTests */,
 				526FE9651C210DDA007651BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				526FE9641C210DDA007651BC /* SheepCounter.app */,
+				526FE97D1C210EED007651BC /* SheepCounterUITests.xctest */,
+				526FE98D1C2110C4007651BC /* SheepCounterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +101,7 @@
 		526FE9661C210DDA007651BC /* SheepCounter */ = {
 			isa = PBXGroup;
 			children = (
+				526FE9871C21101D007651BC /* SheepModel.swift */,
 				526FE9671C210DDA007651BC /* AppDelegate.swift */,
 				526FE9691C210DDA007651BC /* ViewController.swift */,
 				526FE96B1C210DDA007651BC /* Main.storyboard */,
@@ -62,6 +110,25 @@
 				526FE9731C210DDA007651BC /* Info.plist */,
 			);
 			path = SheepCounter;
+			sourceTree = "<group>";
+		};
+		526FE97E1C210EED007651BC /* SheepCounterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				526FE97F1C210EED007651BC /* SheepCounterUITests.swift */,
+				526FE9811C210EED007651BC /* Info.plist */,
+			);
+			path = SheepCounterUITests;
+			sourceTree = "<group>";
+		};
+		526FE98E1C2110C4007651BC /* SheepCounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				526FE9971C21167F007651BC /* ViewControllerTests.swift */,
+				526FE98F1C2110C4007651BC /* SheepCounterTests.swift */,
+				526FE9911C2110C4007651BC /* Info.plist */,
+			);
+			path = SheepCounterTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +151,42 @@
 			productReference = 526FE9641C210DDA007651BC /* SheepCounter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		526FE97C1C210EED007651BC /* SheepCounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526FE9841C210EED007651BC /* Build configuration list for PBXNativeTarget "SheepCounterUITests" */;
+			buildPhases = (
+				526FE9791C210EED007651BC /* Sources */,
+				526FE97A1C210EED007651BC /* Frameworks */,
+				526FE97B1C210EED007651BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				526FE9831C210EED007651BC /* PBXTargetDependency */,
+			);
+			name = SheepCounterUITests;
+			productName = SheepCounterUITests;
+			productReference = 526FE97D1C210EED007651BC /* SheepCounterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		526FE98C1C2110C4007651BC /* SheepCounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526FE9941C2110C4007651BC /* Build configuration list for PBXNativeTarget "SheepCounterTests" */;
+			buildPhases = (
+				526FE9891C2110C4007651BC /* Sources */,
+				526FE98A1C2110C4007651BC /* Frameworks */,
+				526FE98B1C2110C4007651BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				526FE9931C2110C4007651BC /* PBXTargetDependency */,
+			);
+			name = SheepCounterTests;
+			productName = SheepCounterTests;
+			productReference = 526FE98D1C2110C4007651BC /* SheepCounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +199,14 @@
 				TargetAttributes = {
 					526FE9631C210DDA007651BC = {
 						CreatedOnToolsVersion = 7.2;
+					};
+					526FE97C1C210EED007651BC = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 526FE9631C210DDA007651BC;
+					};
+					526FE98C1C2110C4007651BC = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 526FE9631C210DDA007651BC;
 					};
 				};
 			};
@@ -113,6 +224,8 @@
 			projectRoot = "";
 			targets = (
 				526FE9631C210DDA007651BC /* SheepCounter */,
+				526FE97C1C210EED007651BC /* SheepCounterUITests */,
+				526FE98C1C2110C4007651BC /* SheepCounterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +241,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		526FE97B1C210EED007651BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526FE98B1C2110C4007651BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,11 +263,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				526FE96A1C210DDA007651BC /* ViewController.swift in Sources */,
+				526FE9881C21101D007651BC /* SheepModel.swift in Sources */,
 				526FE9681C210DDA007651BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		526FE9791C210EED007651BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526FE9801C210EED007651BC /* SheepCounterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526FE9891C2110C4007651BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526FE9981C21167F007651BC /* ViewControllerTests.swift in Sources */,
+				526FE9901C2110C4007651BC /* SheepCounterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		526FE9831C210EED007651BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 526FE9631C210DDA007651BC /* SheepCounter */;
+			targetProxy = 526FE9821C210EED007651BC /* PBXContainerItemProxy */;
+		};
+		526FE9931C2110C4007651BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 526FE9631C210DDA007651BC /* SheepCounter */;
+			targetProxy = 526FE9921C2110C4007651BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		526FE96B1C210DDA007651BC /* Main.storyboard */ = {
@@ -267,6 +425,54 @@
 			};
 			name = Release;
 		};
+		526FE9851C210EED007651BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SheepCounterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnregner.SheepCounterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SheepCounter;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		526FE9861C210EED007651BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SheepCounterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnregner.SheepCounterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SheepCounter;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		526FE9951C2110C4007651BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SheepCounterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnregner.SheepCounterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SheepCounter.app/SheepCounter";
+			};
+			name = Debug;
+		};
+		526FE9961C2110C4007651BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SheepCounterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnregner.SheepCounterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SheepCounter.app/SheepCounter";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +490,22 @@
 			buildConfigurations = (
 				526FE9771C210DDA007651BC /* Debug */,
 				526FE9781C210DDA007651BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		526FE9841C210EED007651BC /* Build configuration list for PBXNativeTarget "SheepCounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526FE9851C210EED007651BC /* Debug */,
+				526FE9861C210EED007651BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		526FE9941C2110C4007651BC /* Build configuration list for PBXNativeTarget "SheepCounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526FE9951C2110C4007651BC /* Debug */,
+				526FE9961C2110C4007651BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

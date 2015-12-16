@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SheepCounter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USs-My-Ekg">
+                                <rect key="frame" x="295" y="65" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPP-Rp-1GT">
+                                <rect key="frame" x="103" y="285" width="65" height="30"/>
+                                <state key="normal" title="Decrease"/>
+                                <connections>
+                                    <action selector="decrease:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VM5-tl-4AQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9T-oH-TuC">
+                                <rect key="frame" x="438" y="285" width="59" height="30"/>
+                                <state key="normal" title="Increase"/>
+                                <connections>
+                                    <action selector="increase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PcC-2M-6K8"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nae-bD-sB5" customClass="UIControl">
+                                <rect key="frame" x="268" y="275" width="65" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.43588065914922436" blue="0.38887328364174234" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="reset">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="B9T-oH-TuC" secondAttribute="trailing" constant="83" id="AHL-UY-gbj"/>
+                            <constraint firstItem="Nae-bD-sB5" firstAttribute="width" secondItem="EPP-Rp-1GT" secondAttribute="width" id="E9e-Aw-Hri"/>
+                            <constraint firstItem="B9T-oH-TuC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EED-pY-bYh"/>
+                            <constraint firstItem="EPP-Rp-1GT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N9Z-1A-q3Z"/>
+                            <constraint firstItem="USs-My-Ekg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QAj-ZK-mw8"/>
+                            <constraint firstItem="EPP-Rp-1GT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="83" id="QAp-sO-f5g"/>
+                            <constraint firstItem="Nae-bD-sB5" firstAttribute="height" secondItem="EPP-Rp-1GT" secondAttribute="height" id="Rur-g8-FXz"/>
+                            <constraint firstItem="USs-My-Ekg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="d2o-z9-c6Z"/>
+                            <constraint firstItem="Nae-bD-sB5" firstAttribute="baseline" secondItem="EPP-Rp-1GT" secondAttribute="baseline" id="laf-OV-IdS"/>
+                            <constraint firstItem="Nae-bD-sB5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xga-GV-788"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="USs-My-Ekg" id="sJp-hT-8ro"/>
+                        <outlet property="decreaseButton" destination="EPP-Rp-1GT" id="STQ-8a-1C9"/>
+                        <outlet property="increaseButton" destination="B9T-oH-TuC" id="fZB-yy-Z9w"/>
+                        <outlet property="resetButton" destination="Nae-bD-sB5" id="l0o-Ob-cSU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="581" y="392"/>
         </scene>
     </scenes>
 </document>
